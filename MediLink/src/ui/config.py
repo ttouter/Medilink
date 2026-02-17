@@ -3,7 +3,7 @@ import sys
 
 #rutas del sistema
 if getattr(sys, 'frozen', False):
-    base_dir = sys._meipass
+    base_dir = sys._MEIPASS
 else:
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -23,10 +23,11 @@ tax_rate = 0.16
 color_primary = "#0288D1"
 color_secondary = "#0097A7"
 color_background = "#F5F5F5"
-color_surface = "#FFFFFFFF"
-color_text_main = "#21212121"
-color_text_muted = "#75757575"
+color_surface = "#FFFFFFF"
+color_text_main = "#212121"
+color_text_muted = "#757575"
 color_success = "#388E3C"
+color_danger = "#D32F2F"
 
 #tipografia
 font_main = ("Segoe UI", 14)
