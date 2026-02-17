@@ -1,15 +1,34 @@
 import os
+import sys
 
-# Rutas absolutas para evitar errores al compilar
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ASSETS_DIR = os.path.join(BASE_DIR, "assets")
-SOUNDS_DIR = os.path.join(ASSETS_DIR, "sounds")
+#rutas del sistema
+if getattr(sys, 'frozen', False):
+    base_dir = sys._meipass
+else:
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Colores del Tema
-COLOR_PRIMARY = "#1f6aa5"
-COLOR_ACCENT = "#D32F2F"
-COLOR_BACKGROUND = "#242424"
+assets_dir = os.path.join(base_dir,"assets")
+images_dir = os.path.join(assets_dir, "images")
+icons_dir = os.path.join(assets_dir, "icons")
+sounds_dir = os.path.join(assets_dir, "sounds")
 
-# Configuración de Tiempos (en segundos)
-POMODORO_TIME = 25 * 60
-SHORT_BREAK = 5 * 60
+db_dir = os.path.join(base_dir, "database")
+db_path = os.path.join(db_dir, "medilink_data.db")
+
+#constantes
+app_name = "MediLink - Sistema de Gestión Médica"
+tax_rate = 0.16
+
+#colores del tema
+color_primary = "#0288D1"
+color_secondary = "#0097A7"
+color_background = "#F5F5F5"
+color_surface = "#FFFFFFFF"
+color_text_main = "#21212121"
+color_text_muted = "#75757575"
+color_success = "#388E3C"
+
+#tipografia
+font_main = ("Segoe UI", 14)
+font_heading = ("Segoe UI", 24, "bold")
+font_subheading = ("Segoe UI", 18, "bold")
