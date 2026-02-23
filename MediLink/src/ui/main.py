@@ -4,7 +4,7 @@ import os
 
 # Asegurar que Python encuentre la carpeta de configuración y otras carpetas
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from ui import config # Suponiendo que guardaste las variables en config/config.py
+from ui import config
 
 class MediLinkApp(ctk.CTk):
     def __init__(self):
