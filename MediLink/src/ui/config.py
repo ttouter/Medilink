@@ -19,15 +19,15 @@ db_path = os.path.join(db_dir, "medilink_data.db")
 app_name = "MediLink - Sistema de Gestión Médica"
 tax_rate = 0.16
 
-#colores del tema
+# colores del tema (Solo Modo Oscuro)
 color_primary = "#0288D1"
 color_secondary = "#0097A7"
-color_background = "#F5F5F5"
-color_surface = "#FFFFFF"
-color_text_main = "#212121"
-color_text_muted = "#757575"
-color_success = "#388E3C"
-color_danger = "#D32F2F"
+color_background = "#121212" 
+color_surface = "#1E1E1E"    
+color_text_main = "#E0E0E0"  
+color_text_muted = "#A0A0A0" 
+color_success = "#4CAF50"    
+color_danger = "#EF5350"     
 
 #tipografia
 font_main = ("Segoe UI", 14)
